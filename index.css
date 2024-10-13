@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2rem 5rem;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0rem;
+  /* border-bottom: 1px solid lightgray; */
+  background-color: white;
+}
+
+.nav_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+ul li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem 0rem;
+}
+
+.prod_card {
+  /* flex: 1; */
+  /* flex-basis: 1; */
+  border: 1px solid gray;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 10px 2px rgba(255, 163, 229, 0.3);
+}
+
+button {
+  background: pink;
+  outline: none;
+  padding: 0.3rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  border: none;
+  transition: 0.1s all;
+}
+
+button:active {
+  transform: scale(0.95);
+  transition: all 0.1s;
+}
+
+.red_btn {
+  background: red;
+  color: white;
+  margin-left: 0.5rem;
+}
+
+.nav_bottom {
+  width: 100%;
+  border-radius: 0.5rem;
+  background: rgba(255, 152, 198, 0.146);
+  height: 2.7rem;
+  cursor: pointer;
+  padding: 0.7rem;
+  transition: 0.5s all;
+  overflow: hidden;
+}
+
+.nav_bottom_active {
+  height: 20rem;
+  transition: 0.5s all;
+  overflow-y: scroll;
+}
+
+.ordered_items {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem 0rem;
+}
+
+.searchbar {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.searchbar input {
+  width: 100%;
+  padding: 0.5rem 0.8rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  font-size: 1rem;
+  transition: 0.3s all;
+}
+
+input:focus {
+  border-bottom: 1px solid rgb(255, 68, 99);
+  transition: 0.3s all;
+}
+
+@media (width < 550px) {
+  body {
+    padding: 1rem 1.5rem;
+  }
+
+  nav {
+    width: 102%;
+  }
+
+  .nav_top {
+    padding-bottom: 1rem;
+  }
+
+  ul li {
+    font-size: 1rem;
+  }
+
+  ul li a {
+    font-size: 1.5rem;
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 0rem;
+  }
+
+  .red_btn {
+    margin-left: 0rem;
+  }
+
+  .nav_bottom h3 {
+    font-size: 1rem;
+  }
+
+  .nav_bottom_active {
+    height: 15rem;
+  }
+
+  .ordered_items {
+    margin-top: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+    font-size: 0.8rem;
+  }
+
+  .searchbar {
+    margin-top: 0.5rem;
+  }
+
+  .searchbar input {
+    font-size: 0.9rem;
+  }
+}

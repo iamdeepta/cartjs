@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ORDER NOW</title>
+    <link href="./index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav_top">
+        <ul>
+          <li><a href="/">ORDER NOW</a></li>
+        </ul>
+        <ul>
+          <li>CART <span>(0)</span></li>
+        </ul>
+      </div>
+      <div class="nav_bottom" onclick="openOrderedItems()">
+        <h3>Ordered Items <span>(0), Total Price: 0 TK</span></h3>
+
+        <div class="ordered_items"></div>
+      </div>
+
+      <div class="searchbar">
+        <input
+          type="search"
+          placeholder="Search Product"
+          onchange="searchProduct()"
+        />
+      </div>
+    </nav>
+
+    <main></main>
+
+    <script src="./data.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
